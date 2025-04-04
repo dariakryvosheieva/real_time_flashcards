@@ -1,0 +1,8 @@
+Flask
+beautifulsoup4
+sounddevice
+openai-whisper
+nltk
+numpy
+torch
+

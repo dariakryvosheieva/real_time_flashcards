@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ section }}</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 2em;
+      }
+      mark {
+        background-color: yellow;
+      }
+      .nav {
+        margin-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="{{ url_for('prev_page') }}">⬅️ Prev</a> |
+      <a href="{{ url_for('next_page') }}">Next ➡️</a>
+    </div>
+    <div>{{ content|safe }}</div>
+    <div class="nav">
+      <a href="{{ url_for('prev_page') }}">⬅️ Prev</a> |
+      <a href="{{ url_for('next_page') }}">Next ➡️</a>
+    </div>
+  </body>
+</html>
